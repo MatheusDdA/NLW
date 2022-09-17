@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./NLWimg/bg.jpg);
+    background-position: top center;
+    background-repeat:no-repeat;
+    background-size: 100%, auto;
+
+    background-color:#121214;
+}
+body *{
+    font-family:'inter', sans-serif;
+    line-height:160%;
+}
+header{
+    text-align: center;
+    padding-top: 20px;
+}
+header div{
+    width:30%;
+    margin: auto;
+    background-image:linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+}
+header div:hover{
+    transform: scale(1.1);
+}
+header img{
+    width: 100%;
+    border-radius: 50%;
+}
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+ul{
+    list-style-type:none;
+    display: flex;
+    gap: 16px;
+}
+section{
+    color: rgb(224, 218, 218);
+    background-image:linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+section h2{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 160%;
+    /* or 38px */
+
+    letter-spacing: -0.47px
+}
+section p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+
+    letter-spacing: -0.18px;
+    color: #A1A1AA; 
+}
+section ul{
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+}
+section div{
+    background-color: #2A2634;
+    padding: 24px;
+    max-width: 580px;
+    border-radius: 8px;
+}
+.games img{
+    border-radius: 8px;
+    width: 100%;
+    max-width: 130px;
+}
+.canais img{
+    border-radius:50px;
+    width: 100%;
+    max-width: 70px;
+    border: 1px solid rgb(63, 63, 71);
+}
+section ul li{
+    transition: transform .3s;
+}
+section ul li:hover{
+    transform: scale(1.1);
+}
+
+/*Animações*/
+
+@keyframes ltoc {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.s1{
+    animation: ltoc .7s;
+}
+.s2{
+    animation: ltoc 1.0s;
+}
+.s3{
+    animation: ltoc 1.3s;
+}
+.he1{
+    animation: ltoc .5s;
+}
